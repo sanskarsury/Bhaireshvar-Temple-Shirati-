@@ -1,0 +1,51 @@
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #5a0f02; /* Deep Maroon */
+  color: #fff5cc; /* Soft golden text */
+  padding: 30px 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-box {
+  width: 160px;
+}
+
+.footer-box h3 {
+  color: #ffcc00; /* Saffron-gold heading */
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+.footer-box p, .footer-box ul li a {
+  color: #f8e8b3;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin: 6px 0;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #ffcc00;
+}
+
+copyright {
+  background-color: #3b0600;
+  text-align: center;
+  padding: 12px;
+  color: #ffcc00;
+  font-size: 14px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📸 गॅलरी - श्री भैरैश्वर मंदिर</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>🙏 श्री भैरैश्वर मंदिर</h1>
+  <nav>
+    <a href="index.html">🏠 मुख्य पृष्ठ</a>
+  </nav>
+</header>
+<style>
+  body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0c0c0f;
+  color: white;
+}
+
+/* Header */
+.header {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #ffcc00;
+  margin: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.hero h2 {
+  color: #ffcc00;
+}
+
+/* Content Grid */
+.content {
+  display: grid;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Cards */
+.card {
+  background: #1a1a1f;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,204,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #ffcc00;
+}
+
+/* List */
+ul {
+  padding-left: 20px;
+}
+
+/* Mobile Responsive */
+@media(min-width:768px){
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width:1024px){
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+<!-- Hero Section -->
+<section class="hero">
+  <h2>📸 इतिहास व अन्य माहिती</h2>
+  <p>श्रद्धा • परंपरा • संस्कृती</p>
+</section>
+
+<!-- Content -->
+<section class="content">
+
+  <div class="card">
+    <p>
+      अन्याय, अहंकार, अधर्माचा नाश करून सुख, शांती, समाधान, समृद्धीचा मार्ग मोकळा करणारे...
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🔱 भैरवनाथ माहिती</h3>
+    <ul>
+      <li>कुलदैवत: अनेक कुटुंबांचे कुलदैवत</li>
+      <li>शंकराचे रूप</li>
+      <li>तंत्र-मंत्र उपासना</li>
+      <li>'बिरोबा' नाव धनगर समाजात प्रसिद्ध</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🎉 उत्सव</h3>
+    <p>पालखी, मिरवणूक, ढोल-ताशा, धार्मिक विधी आणि सांस्कृतिक कार्यक्रम आयोजित केले जातात.</p>
+  </div>
+
+  <div class="card">
+    <h3>🚩 पालखी सोहळा</h3>
+    <p>धनगरी ढोलाच्या गजरात भव्य पालखी गावातून फिरवली जाते.</p>
+  </div>
+
+  <div class="card">
+    <h3>🏛️ सध्याचे बांधकाम</h3>
+    <p>अलीकडेच जीर्णोद्धार आणि कलशारोहण समारंभ मोठ्या उत्साहात पार पडला.</p>
+  </div>
+
+  <div class="card">
+    <h3>👨‍ पूजा व्यवस्थापन</h3>
+    <p>गुरव कुटुंब, पाटील आणि ट्रस्ट सदस्य यांचा मानाचा सहभाग असतो.</p>
+  </div>
+
+  <div class="card">
+    <h3>📜 प्राचीन इतिहास</h3>
+    <p>
+      शिलाहार काळातील मंदिर, कृष्णा नदीजवळील आख्यायिका आणि गाव स्थलांतराची कथा.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🪵 वास्तूरचना</h3>
+    <p>
+      संपूर्ण मंदिर लाकडी आधारावर उभारलेले असून भूकंपरोधक रचना आहे.
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>

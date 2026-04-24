@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>छायाचित्र</title>
+
+<style>
+body {
+  background:#03020a;
+  color:white;
+  font-family:sans-serif;
+  margin:0;
+  text-align:center;
+}
+
+h2 {
+  margin:20px 0;
+}
+
+/* GRID LAYOUT */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+  gap:8px;
+  padding:10px;
+}
+
+/* IMAGE CARD */
+.card {
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+.card img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  aspect-ratio:1/1; /* square like Instagram */
+  transition:transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.card:hover img {
+  transform:scale(1.1);
+}
+
+/* CAPTION OVERLAY */
+.caption {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  color:white;
+  font-size:12px;
+  padding:6px;
+  opacity:0;
+  transition:0.3s;
+}
+
+.card:hover .caption {
+  opacity:1;
+}
+
+/* MOBILE TAP SUPPORT */
+.card:active .caption {
+  opacity:1;
+}
+
+/* NAV */
+nav {
+  margin:20px;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  background:#222;
+  padding:10px 15px;
+  border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>📸 छायाचित्र</h2>
+
+<div class="gallery">
+
+  <div class="card">
+    <img src="https://i.ibb.co/r2V4DSJY/Screenshot-20251106-090747.jpg">
+    <div class="caption">जुने मंदिर</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/BKvCDzBs/IMG-20251105-WA0111.jpg">
+    <div class="caption">दिपोत्सव २०२५</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/27Gps7ff/Screenshot-20251106-090812.jpg">
+    <div class="caption">पालखी सोहळा 2025</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/QVTNTKt/Screenshot-20251106-090837.jpg">
+    <div class="caption">देऊळ</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/mr96LJ7N/IMG-20251106-194448.jpg">
+    <div class="caption">नवीन मंदिर</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/hxNXkN83/IMG-20251112-WA0004.jpg">
+    <div class="caption">जन्मकाल सोहळा</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/20nd9sGt/IMG-20251112-201838.jpg">
+    <div class="caption">श्रींचे दर्शन</div>
+  </div>
+
+</div>
+
+<nav>
+  <a href="index.html">🏠 मुख्य पृष्ठ</a>
+</nav>
+
+</body>
+</html>
